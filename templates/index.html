@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="{{html_lang}}" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{description}}">
+  <meta name="author" content="Yuteng Zhang">
+  <meta name="theme-color" content="#0c0c0b">
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Yuteng Zhang — LLMs for Spatiotemporal Data">
+  <meta property="og:description" content="{{description}}">
+  <meta name="twitter:card" content="summary">
+  {{seo_links}}
+  <title>{{page_title}}</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="stylesheet" href="assets/experience.css">
+  <script>try{var t=localStorage.getItem('yz-theme');document.documentElement.dataset.theme=(t==='light'||t==='dark')?t:'dark'}catch(e){}</script>
+  <script type="application/ld+json">{{json_ld}}</script>
+  <script src="assets/app.js" defer></script>
+  <script src="assets/motion/boot.js" defer></script>
+  <script type="module" src="assets/stars/boot.js"></script>
+  <script src="assets/scene/boot.js" defer></script>
+<link rel="stylesheet" href="assets/refinement.css">
+  <link rel="stylesheet" href="assets/visitors/visitors.css">
+  <link rel="stylesheet" href="assets/v5-polish.css">
+  <link rel="stylesheet" href="assets/v6.css">
+  <link rel="stylesheet" href="assets/v7.css">
+  <link rel="stylesheet" href="assets/v8.css">
+  <script type="module" src="assets/interaction/boot.js"></script>
+  <script type="module" src="assets/interaction/click-boot.js"></script>
+  <script type="module" src="assets/visitors/boot.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">{{skip}}</a>
+  <header class="site-header">
+    <div class="reading-progress" aria-hidden="true"><i></i></div>
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="Yuteng Zhang — {{home}}">
+        <span class="brand-mark" aria-hidden="true">{{brand_svg}}</span>
+        <span class="brand-type">YUTENG ZHANG<span class="brand-subline">{{brand_role}}</span></span>
+      </a>
+      <nav class="main-nav" id="main-nav" aria-label="{{navigation}}">
+        <a href="#about">{{about_label}}</a>
+        <a href="#publications">{{publications_label}}</a>
+        <a href="#journey">{{journey_label}}</a>
+      </nav>
+      <div class="header-tools">
+        <a class="language-button" href="{{alternate_page}}" hreflang="{{alternate_lang}}" lang="{{alternate_lang}}" aria-label="{{language_aria}}">{{language_label}}</a>
+        <button class="icon-button theme-toggle js-only" type="button" aria-label="{{theme_label}}" title="{{theme_label}}"><span class="theme-light">{{sun_icon}}</span><span class="theme-dark">{{moon_icon}}</span></button>
+        <a class="header-contact" href="#contact">{{say_hello}} {{arrow_icon}}</a>
+        <button class="icon-button menu-toggle" type="button" aria-label="{{menu_label}}" aria-expanded="false" aria-controls="main-nav">{{menu_icon}}</button>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero container" id="home" aria-labelledby="hero-name">
+      <div class="hero-atmosphere" aria-hidden="true"></div>
+      <div class="hero-copy">
+        <div class="hero-identity">{{avatar_html}}<div><h1 class="hero-name" id="hero-name">Yuteng <em>Zhang<span class="name-period">.</span></em></h1><p class="identity-subline mono">LLM × SPATIOTEMPORAL INTELLIGENCE</p></div></div>
+        <p class="hero-line">{{hero_line}}</p>
+        <p class="hero-description">{{hero_intro}}</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#publications">{{explore_work}}{{arrow_icon}}</a>
+
+        </div>
+        <div class="hero-meta"><span>{{pin_icon}}{{hero_location}}</span></div>
+        <div class="hero-social" aria-label="{{profiles_label}}">
+          <a class="hero-social-link" href="{{scholar_url}}" target="_blank" rel="noopener noreferrer" aria-label="{{scholar_aria}}"><span class="hero-social-icon" aria-hidden="true">{{scholar_icon}}</span><span>Scholar</span><span class="hero-social-out" aria-hidden="true">↗</span></a>
+          <a class="hero-social-link" href="{{linkedin_url}}" target="_blank" rel="noopener noreferrer" aria-label="{{linkedin_aria}}"><span class="hero-social-icon" aria-hidden="true">{{linkedin_icon}}</span><span>LinkedIn</span><span class="hero-social-out" aria-hidden="true">↗</span></a>
+          <a class="hero-social-link" href="{{github_url}}" target="_blank" rel="noopener noreferrer" aria-label="{{github_aria}}"><span class="hero-social-icon" aria-hidden="true">{{github_icon}}</span><span>GitHub</span><span class="hero-social-out" aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <div class="hero-visual city-experience" data-city-scene data-view="city" data-mode="auto" data-renderer="loading" aria-label="{{scene_label}}">
+        <div class="city-stage">
+          <canvas id="city-canvas" tabindex="0" role="img" aria-label="{{scene_canvas_label}}" aria-describedby="scene-help">{{scene_canvas_label}}</canvas>
+          
+          <div class="scene-fallback" hidden><span class="fallback-glyph" aria-hidden="true">◇</span><strong>{{scene_fallback_title}}</strong><p data-fallback-message></p></div>
+          <noscript><p class="no-js-scene">{{scene_noscript}}</p></noscript>
+        </div>
+        <p class="sr-only" id="scene-help">{{scene_help}}</p>
+      </div>
+    </section>
+    <section class="news-dock container" id="news" aria-labelledby="news-heading">
+      <div class="news-panel">
+        <div class="news-intro">
+          <p class="eyebrow mono"><span class="news-live-dot" aria-hidden="true"></span>{{updates_label}}</p>
+          <h2 id="news-heading">{{news_headline}}</h2>
+          <p class="news-kicker">{{news_kicker}}</p>
+          <a class="news-see-all" href="#publications">{{timeline_view_all}} <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="news-list-wrap">
+          <div class="news-list-head"><span>{{news_count}}</span><span>2024 — 2026</span></div>
+          <ol class="news-list">{{timeline_items}}</ol>
+        </div>
+      </div>
+    </section>
+    <section class="section container about-section" id="about" aria-labelledby="about-heading">
+      <div class="section-heading"><p class="eyebrow section-index">01 / {{about_label}}</p><h2 id="about-heading">{{about_title}}</h2></div>
+      <div class="about-content">{{about_paragraphs}}</div>
+    </section>
+    <section class="section container publications-section" id="publications" aria-labelledby="publications-heading">
+      <div class="section-title-row"><div class="section-heading"><p class="eyebrow section-index">02 / {{publications_label}}</p><h2 id="publications-heading">{{publications_title}}</h2></div></div>
+      <div class="publication-list" id="publication-list">{{publication_rows}}</div>
+      <p class="publication-note">{{publication_note}}</p>
+    </section>
+    <section class="section journey-section" id="journey" aria-labelledby="journey-heading"><div class="container"><div class="section-heading"><p class="eyebrow section-index">03 / {{journey_label}}</p><h2 id="journey-heading">{{journey_title}}</h2></div><div class="journey-grid"><div class="education"><h3 class="column-heading">{{education_label}}</h3><div class="timeline">{{education_items}}</div></div><div class="experience"><h3 class="column-heading">{{experience_label}}</h3><div class="experience-list">{{experience_items}}</div></div></div></div></section>
+    <section class="contact-section container" id="contact" aria-labelledby="contact-heading"><p class="eyebrow section-index">04 / {{contact_label}}</p><div class="contact-grid"><div><h2 id="contact-heading">{{contact_title}}</h2><p class="contact-description">{{contact_intro}}</p></div><div class="contact-actions"><a class="email-link" href="mailto:{{email}}">{{email}} {{arrow_icon}}</a><button class="text-link copy-email js-only" type="button" data-email="{{email}}">{{copy_icon}} {{copy_email_label}}</button><div class="social-links"><a href="{{scholar_url}}" target="_blank" rel="noopener noreferrer">Scholar {{external_icon}}</a><a href="{{github_url}}" target="_blank" rel="noopener noreferrer">GitHub {{external_icon}}</a><a href="{{linkedin_url}}" target="_blank" rel="noopener noreferrer">LinkedIn {{external_icon}}</a></div></div></div></section>
+  {{visitors_html}}
+  </main>
+  <footer class="site-footer container"><span>© {{year}} Yuteng Zhang <span class="footer-divider">/</span> {{footer_label}}</span><button class="footer-motion js-only" type="button" data-motion-toggle aria-pressed="false">{{motion_preference}}</button><a href="#home">{{back_top}}{{up_icon}}</a></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script type="application/json" id="visitors-data">{{visitors_json}}</script>
+  <script type="application/json" id="scene-data">{{scene_json}}</script>
+
+  <script type="application/json" id="ui-data">{{ui_json}}</script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "public/assets/scene/SceneController.js": "f5021264456aa5ac39eab0bd9e180506b3fc59a760182851a6dde8e1c86cecb6",
+  "public/assets/scene/boot.js": "e63bac5cba5bc45e5fe32d7471f95dc47668cb7f458622a67cdf1ba53d9f55e0",
+  "public/assets/scene/core/ArcballControls.js": "1142f32fa9928a5b60fd452381ee4a883cb0939387260d095738fe832df24f1f",
+  "public/assets/scene/core/Renderer.js": "c1d9bfa4f84df4e22bd42864c122a31480f9f36cf819e45f275ac3adb0bf514d",
+  "public/assets/scene/core/SoftwareRenderer.js": "63fd9a48a54285b06f4fca2719b320fd503f9201d9a281554a32fafe5768644c",
+  "public/assets/scene/core/geometry.js": "e2b22da21cc70c473956b1de56d77e77f38df96bb1e2242174803d8e2b1cec4d",
+  "public/assets/scene/core/math.js": "e3fb893d3335c0e7d294194b88c95c03d4c396c2bf52b378478447b3072c4786",
+  "public/assets/scene/geometry/urbanDistrict.js": "9caa8b456cb89f7cd44e81244ba05a9663a09d65afa27a425070adfc114ae722",
+  "public/assets/scene/layers/AgentLayer.js": "21121664f19d7d85dac462880d6197fae1b871534d1692cc798a4b0031e2baa4",
+  "public/assets/scene/layers/AmbientLayer.js": "5350fa861d352df26e29ec23ec6485499cb65df499c484f7699d0eb771a515fd",
+  "public/assets/scene/layers/CityLayer.js": "86eb6b4411660784d2c6a0fb4a4363763e180b2aa4100cc6bd3fbd2729ba3294",
+  "public/assets/scene/layers/registry.js": "d7647113fa9ea3700ca133b7d6b3861d2272c4e80990ef663b5a2806816d5ef3",
+  "public/assets/scene/state.js": "fe77579aad20f58aca62f09dd70568329927170c7e8045ae39adb9bfb2afaf91"
+}

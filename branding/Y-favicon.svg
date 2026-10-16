@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" role="img" aria-label="Yuteng Zhang Y mark">
+  <rect x="0" y="0" width="64" height="64" rx="13" fill="#0C0C0B"/>
+  <g color="#D9B56E">
+  <g stroke="currentColor" fill="none" stroke-width="3.35" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M15.2 15.0L32 32.1L48.8 15.0"/>
+    <path d="M32 32.1V50.6"/>
+  </g>
+  <g fill="currentColor">
+    <circle cx="15.2" cy="15" r="3.25"/>
+    <circle cx="48.8" cy="15" r="3.25"/>
+    <circle cx="32" cy="50.6" r="3.25"/>
+    <circle cx="32" cy="32.1" r="2.1"/>
+  </g>
+  </g>
+</svg>

@@ -1,0 +1,6 @@
+{
+  "enabled": true,
+  "apiBase": "./api",
+  "refreshSeconds": 120,
+  "requestTimeoutMs": 6500
+}

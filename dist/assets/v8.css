@@ -1,0 +1,85 @@
+/* v8: independent editorial adjustments. Scene source, controls and geometry untouched. */
+/* Header: role appears beside the Y, in place of the earlier RESEARCH subline. */
+.brand-type .brand-subline {
+  font: 9px/1.45 var(--mono);
+  letter-spacing: .005em;
+  color: var(--secondary);
+  text-transform: none;
+  white-space: nowrap;
+}
+/* Never repeat the role above the avatar. Keep compact header typography. */
+.brand { min-width: 0; }
+.brand-type { min-width: 0; }
+/* Inline advisor credit: link is recognizably underlined, but not visually loud. */
+.about-content .advisor-inline-link {
+  color: var(--text);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1px;
+  text-decoration-color: var(--accent);
+  transition: color .2s ease, text-decoration-color .2s ease;
+}
+.about-content .advisor-inline-link:hover,
+.about-content .advisor-inline-link:focus-visible {color:var(--accent);text-decoration-thickness:2px;}
+/* No filter/category bar; the five papers begin after a single calm divider. */
+.publications-section .publication-list { margin-top:24px; border-top:1px solid var(--line); }
+/* v8 stars: luminous, distinct points rather than dusty halos. Star containers
+   drift by a few pixels; internal points twinkle on independent rhythms. */
+.site-night-sky .star {
+  width:16px; height:16px;
+  background:transparent; box-shadow:none; filter:none;
+  opacity:1; border-radius:0;
+  animation:v8-star-drift var(--dp,34s) ease-in-out var(--dd,0s) infinite alternate;
+  will-change:transform;
+}
+/* Override the v7 :nth-child(4n) background too: no 16px square tiles. */
+.site-night-sky .star:nth-child(4n){background:transparent;box-shadow:none}
+.site-night-sky .star-core {
+  position:absolute; top:50%; left:50%;
+  width:var(--ss,1.2px); height:var(--ss,1.2px);
+  border-radius:50%;
+  background:#ffefcf;
+  box-shadow:0 0 1px rgba(253,235,203,.6);
+  transform:translate(-50%,-50%);
+  opacity:.34;
+  animation:v8-star-twinkle var(--sp,8s) ease-in-out var(--sd,0s) infinite;
+}
+.site-night-sky .star:nth-child(3n) .star-core{background:#eff2fc;box-shadow:0 0 1px rgba(230,235,255,.6)}
+.site-night-sky .star-glint .star-core:before,
+.site-night-sky .star-glint .star-core:after {
+  content:"";position:absolute;top:50%;left:50%;pointer-events:none;
+  background:linear-gradient(180deg,transparent,rgba(255,241,211,.72) 48%,rgba(255,241,211,.72) 52%,transparent);
+  transform:translate(-50%,-50%);
+}
+.site-night-sky .star-glint .star-core:before{width:1px;height:8px}
+.site-night-sky .star-glint .star-core:after{width:8px;height:1px;background:linear-gradient(90deg,transparent,rgba(255,241,211,.72) 48%,rgba(255,241,211,.72) 52%,transparent)}
+@keyframes v8-star-twinkle{
+  0%,100%{opacity:.16}
+  28%{opacity:.38}
+  40%{opacity:.95}
+  54%{opacity:.24}
+  72%{opacity:.66}
+  86%{opacity:.27}
+}
+@keyframes v8-star-drift {from{transform:translate3d(0,0,0)}to{transform:translate3d(var(--dx,8px),var(--dy,5px),0)}}
+html[data-theme='light'] .site-night-sky {display:none!important}
+html[data-motion='paused'] .site-night-sky .star,
+html[data-motion='paused'] .site-night-sky .star-core,
+html[data-motion='reduced'] .site-night-sky .star,
+html[data-motion='reduced'] .site-night-sky .star-core,
+html[data-motion='hidden'] .site-night-sky .star,
+html[data-motion='hidden'] .site-night-sky .star-core {animation-play-state:paused}
+@media(max-width:740px){
+  .brand{gap:7px}
+  .brand-type{font-size:9.5px;letter-spacing:.055em}
+  .brand-type .brand-subline{font-size:7.5px;letter-spacing:-.02em}
+}
+@media(max-width:400px){
+  .brand-type{font-size:9px}
+  .brand-type .brand-subline{font-size:7px;white-space:normal;line-height:1.25;max-width:171px}
+}
+@media(prefers-reduced-motion:reduce){
+  .site-night-sky .star,.site-night-sky .star-core{animation:none!important}
+  .site-night-sky .star-core{opacity:.27}
+}
+@media print{.site-night-sky{display:none!important}}

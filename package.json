@@ -1,0 +1,16 @@
+{
+  "name": "yuteng-academic-site",
+  "version": "8.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Bilingual black-and-gold research homepage: pristine moving stars, Publication list, inline advisor link, stable 3D city and privacy-aware visitor map",
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "test:backend": "node --test tests/worker.test.mjs",
+    "preview:worker": "npx wrangler@4 dev",
+    "deploy": "npx wrangler@4 deploy"
+  },
+  "engines": {
+    "node": ">=22.16.0"
+  }
+}

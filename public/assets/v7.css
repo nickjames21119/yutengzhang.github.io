@@ -1,0 +1,83 @@
+/* v7 — four isolated visual refinements. City 3D geometry, renderer, camera,
+   interaction and agent effects remain byte-for-byte identical to v6. */
+
+/* 1. Navigation mark: a crisp, proportionate Y with four topology nodes. */
+.brand-mark svg { width:40px; height:40px; display:block; }
+.brand:hover .brand-mark svg {
+  transform:translateY(-1px); /* do not rotate the identity mark */
+  filter:drop-shadow(0 0 8px rgba(218,177,105,.20));
+}
+@media(max-width:740px){.brand-mark svg{width:33px;height:33px}}
+
+/* 2. Dark sky: the prior dots were 0.1 opacity on near-black. Retain just
+   26 widely dispersed stars, but give their intermittent peaks a visible
+   center and a tiny soft halo. No layout, JS timers or per-frame effects. */
+.site-night-sky{opacity:.98}
+html[data-theme='dark'] .site-night-sky{opacity:1}
+.site-night-sky .star{
+  width:clamp(1.45px,calc(var(--ss) * 1.55),2.9px);
+  height:clamp(1.45px,calc(var(--ss) * 1.55),2.9px);
+  --twinkle-peak:clamp(.38,calc(var(--base-opacity) * 3.1),.76);
+  background:rgba(253,239,212,.98);
+  box-shadow:0 0 4px rgba(244,211,152,.26),0 0 10px rgba(220,177,96,.10);
+  filter:none;
+  opacity:.19;
+  animation-name:v7-star-twinkle;
+  animation-duration:var(--sp,15s);
+  animation-timing-function:ease-in-out;
+  animation-delay:var(--sd,0s);
+  animation-iteration-count:infinite;
+  animation-direction:alternate;
+}
+.site-night-sky .star:nth-child(4n){background:rgba(238,232,219,.96);box-shadow:0 0 4px rgba(242,237,223,.27)}
+@keyframes v7-star-twinkle{
+  0%,100%{opacity:.09;transform:scale(.65)}
+  28%{opacity:var(--twinkle-peak);transform:scale(1)}
+  52%{opacity:.16;transform:scale(.78)}
+  78%{opacity:calc(var(--twinkle-peak) * .85);transform:scale(1.04)}
+}
+html[data-theme='light'] .site-night-sky{display:none}
+
+/* 3. Pointer activation: precise warm-gold dot blooms into a restrained ring.
+   Short-lived and pointer-events:none; the regular custom cursor stays. */
+.click-pulse{position:fixed;width:0;height:0;z-index:9999;pointer-events:none;isolation:isolate}
+.click-pulse::before,.click-pulse::after{
+  content:"";position:absolute;left:0;top:0;border-radius:50%;pointer-events:none;
+}
+.click-pulse::before{
+  width:8px;height:8px;transform:translate(-50%,-50%) scale(.45);
+  background:var(--accent);box-shadow:0 0 13px rgba(229,188,113,.56);
+  animation:v7-click-dot .56s cubic-bezier(.22,.75,.33,1) forwards;
+}
+.click-pulse::after{
+  width:12px;height:12px;transform:translate(-50%,-50%) scale(.45);
+  border:1px solid var(--accent);box-shadow:0 0 10px rgba(229,188,113,.22);
+  animation:v7-click-wave .58s cubic-bezier(.16,.7,.34,1) forwards;
+}
+@keyframes v7-click-dot{
+  0%{transform:translate(-50%,-50%) scale(.45);opacity:.98}
+  45%{transform:translate(-50%,-50%) scale(1.3);opacity:.78}
+  100%{transform:translate(-50%,-50%) scale(2.3);opacity:0}
+}
+@keyframes v7-click-wave{
+  0%{transform:translate(-50%,-50%) scale(.45);opacity:.84}
+  100%{transform:translate(-50%,-50%) scale(3.85);opacity:0}
+}
+
+/* 4. Absolutely no outside box, frame, pseudo-corners or canvas focus ring
+   around the CITY. Keyboard focus receives one tiny corner indicator instead. */
+.hero-visual.city-experience,
+.hero-visual.city-experience .city-stage,
+.hero-visual.city-experience #city-canvas{
+  border:0!important;outline:0!important;border-radius:0!important;
+  box-shadow:none!important;background-color:transparent!important;
+}
+.hero-visual.city-experience::before,.hero-visual.city-experience::after{content:none!important}
+.hero-visual.city-experience #city-canvas:focus-visible{outline:0!important;outline-offset:0!important}
+.city-stage:has(#city-canvas:focus-visible)::after{
+  content:"";position:absolute;right:9px;bottom:9px;z-index:2;
+  width:5px;height:5px;border-radius:50%;background:var(--accent);
+  box-shadow:0 0 8px rgba(220,180,101,.65);pointer-events:none;
+}
+@media(prefers-reduced-motion:reduce){.site-night-sky .star{animation:none!important;opacity:.25;transform:none}.click-pulse{display:none!important}}
+@media print{.site-night-sky,.click-pulse{display:none!important}}

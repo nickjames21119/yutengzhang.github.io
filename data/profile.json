@@ -1,0 +1,553 @@
+{
+  "siteUrl": "",
+  "updated": "2026-10-15",
+  "name": "Yuteng Zhang",
+  "nameZh": "Yuteng Zhang",
+  "email": "yzhang219@connect.hkust-gz.edu.cn",
+  "description": {
+    "en": "Yuteng Zhang — Ph.D. student at HKUST (Guangzhou). LLMs for spatiotemporal data, interpretability, and agentic decision-making.",
+    "zh": "Yuteng Zhang，香港科技大学（广州）智能交通博士生，研究大语言模型与时空数据、可解释性及智能体决策。"
+  },
+  "links": {
+    "scholar": "https://scholar.google.com/citations?user=wu8mlCQAAAAJ&hl=en",
+    "linkedin": "https://www.linkedin.com/in/yuteng-zhang-57961627a/",
+    "github": "https://github.com/nickjames21119",
+    "advisor": "https://wangjw6.github.io/",
+    "university": "https://www.hkust-gz.edu.cn/"
+  },
+  "hero": {
+    "eyebrow": {
+      "en": "Ph.D. student · HKUST (Guangzhou)",
+      "zh": "智能交通博士生 · 香港科技大学（广州）"
+    },
+    "line": {
+      "en": "LLMs for Spatiotemporal Data.\nLLM Interpretability.",
+      "zh": "大语言模型与时空数据\n大语言模型可解释性"
+    },
+    "intro": {
+      "en": "Exploring how language models understand cities, reason about movement, and make decisions more interpretable.",
+      "zh": "研究语言模型如何理解城市、推理移动行为，以及如何让智能决策更具可解释性。"
+    },
+    "location": {
+      "en": "Based in Guangzhou, China",
+      "zh": "中国 · 广州"
+    }
+  },
+  "about": [
+    {
+      "en": "I am a Ph.D. student in Intelligent Transportation at the Hong Kong University of Science and Technology (Guangzhou), advised by Prof. Jiawei Wang. I received my M.S. in Industrial and Systems Engineering from the University of Washington and my B.E. in Software Engineering from Jilin University.",
+      "zh": "我是香港科技大学（广州）智能交通专业的博士研究生，导师为王家伟教授。我在华盛顿大学获得工业与系统工程硕士学位，并在吉林大学获得软件工程学士学位。"
+    },
+    {
+      "en": "My research interests lie at the intersection of **Large Language Models (LLMs), spatiotemporal data, and intelligent decision-making**. I am particularly interested in how LLMs understand and reason about human mobility and urban environments, how their internal knowledge and decision-making processes can be interpreted, and how agent-based systems can support spatiotemporal analysis and decision-making.",
+      "zh": "我的研究兴趣位于**大语言模型（LLMs）、时空数据与智能决策**的交叉领域。我尤其关注大语言模型如何理解和推理人类移动行为与城市环境、如何解释模型的内部知识及决策过程，以及智能体系统如何支持时空分析与决策。"
+    }
+  ],
+  "research": [
+    {
+      "id": "mobility",
+      "number": "01",
+      "label": "LLM × Mobility",
+      "title": {
+        "en": "From trajectories\nto meaning.",
+        "zh": "从轨迹到语义。"
+      },
+      "description": {
+        "en": "Learning meaningful spatiotemporal representations from mobility histories and urban context, with language models as a bridge between data and behavior.",
+        "zh": "从移动历史与城市环境中学习有意义的时空表示，探索语言模型如何连接数据与行为。"
+      },
+      "tags": {
+        "en": [
+          "Spatiotemporal learning",
+          "Human behavior"
+        ],
+        "zh": [
+          "时空学习",
+          "人类行为"
+        ]
+      }
+    },
+    {
+      "id": "agents",
+      "number": "02",
+      "label": "Collaborative Agents",
+      "title": {
+        "en": "Better reasoning,\ntogether.",
+        "zh": "让智能体更好地协作。"
+      },
+      "description": {
+        "en": "Exploring whom agents should ask, what information they should share, and how they can coordinate under limited communication and computation budgets.",
+        "zh": "探索智能体应该向谁提问、分享什么信息，以及如何在有限的通信与计算预算下进行协作。"
+      },
+      "tags": {
+        "en": [
+          "Communication",
+          "Shared evidence"
+        ],
+        "zh": [
+          "智能体通信",
+          "证据共享"
+        ]
+      }
+    },
+    {
+      "id": "interpretability",
+      "number": "03",
+      "label": "Interpretability",
+      "title": {
+        "en": "Beyond a\nblack box.",
+        "zh": "不止于黑箱预测。"
+      },
+      "description": {
+        "en": "Understanding what language models learn about mobility, and connecting their behavior with human-understandable patterns and decision mechanisms.",
+        "zh": "理解语言模型学到了哪些移动知识，并将模型行为与人类可理解的行为模式及决策机制联系起来。"
+      },
+      "tags": {
+        "en": [
+          "Model understanding",
+          "Semantic representations"
+        ],
+        "zh": [
+          "模型理解",
+          "语义表示"
+        ]
+      }
+    },
+    {
+      "id": "ieor",
+      "number": "04",
+      "label": "IEOR",
+      "title": {
+        "en": "From prediction\nto decisions.",
+        "zh": "从预测走向决策。"
+      },
+      "description": {
+        "en": "Bringing prediction, uncertainty, and optimization together to study transportation operations and support decisions in complex urban systems.",
+        "zh": "结合预测、不确定性与优化，研究交通运营，并为复杂城市系统提供决策支持。"
+      },
+      "tags": {
+        "en": [
+          "Operations research",
+          "Uncertainty"
+        ],
+        "zh": [
+          "运筹学",
+          "不确定性"
+        ]
+      }
+    }
+  ],
+  "news": [
+    {
+      "date": "2026",
+      "type": "paper",
+      "text": {
+        "en": "FREIGHT-MNet accepted at IEEE ICDM 2026.",
+        "zh": "FREIGHT-MNet 被 IEEE ICDM 2026 录用。"
+      },
+      "target": "pub-freight"
+    },
+    {
+      "date": "2026",
+      "type": "paper",
+      "text": {
+        "en": "Causal-Flow SCM accepted at ACM SIGSPATIAL 2026.",
+        "zh": "Causal-Flow SCM 被 ACM SIGSPATIAL 2026 录用。"
+      },
+      "target": "pub-causal"
+    },
+    {
+      "date": "SEP 2026",
+      "type": "position",
+      "text": {
+        "en": "Started my Ph.D. at HKUST (Guangzhou).",
+        "zh": "开始在香港科技大学（广州）攻读博士学位。"
+      },
+      "target": "journey"
+    }
+  ],
+  "publications": [
+    {
+      "id": "freight",
+      "year": 2026,
+      "firstAuthor": true,
+      "domain": "transportation",
+      "status": "accepted",
+      "title": "FREIGHT-MNet: A Public Multimodal Benchmark for Cold-Start Freight OD Travel-Time Risk",
+      "authors": [
+        "Yuteng Zhang",
+        "A. Banerjee"
+      ],
+      "venue": "IEEE International Conference on Data Mining (ICDM 2026)",
+      "shortVenue": "ICDM 2026",
+      "type": "inproceedings",
+      "note": {
+        "en": "Accepted · Corresponding author",
+        "zh": "已录用 · 通讯作者"
+      },
+      "summary": {
+        "en": "A benchmark.",
+        "zh": "一项基准研究。"
+      },
+      "doi": "",
+      "url": "",
+      "code": "",
+      "pdf": "",
+      "citationKey": "zhang2026freight",
+      "sourceNote": "Title, authors, acceptance, and corresponding authorship supplied by the author. No exact matching public record was independently retrieved on 2026-10-06. No DOI, proceedings pages, code, or results have been invented.",
+      "timelineTitle": "FREIGHT-MNet",
+      "timelineDate": {
+        "en": "2026 · Accepted",
+        "zh": "2026 · 已录用"
+      }
+    },
+    {
+      "id": "causal",
+      "year": 2026,
+      "firstAuthor": true,
+      "domain": "transportation",
+      "status": "accepted",
+      "title": "Causal-Flow SCM: Calibrated Forecasting and Counterfactual Prioritization for Airport Delay Propagation",
+      "authors": [
+        "Yuteng Zhang",
+        "Ekin Uğurel"
+      ],
+      "venue": "34th ACM International Conference on Advances in Geographic Information Systems (SIGSPATIAL 2026)",
+      "shortVenue": "SIGSPATIAL 2026",
+      "type": "inproceedings",
+      "note": {
+        "en": "Accepted · Riverside, CA · November 3–6, 2026",
+        "zh": "已录用 · 美国 Riverside · 2026 年 11 月 3–6 日"
+      },
+      "summary": {
+        "en": "Calibrated forecasting and counterfactual prioritization for airport delay propagation.",
+        "zh": "面向机场延误传播的校准预测与反事实优先级分析。"
+      },
+      "doi": "10.1145/3841645.3842948",
+      "url": "",
+      "code": "",
+      "pdf": "",
+      "citationKey": "zhang2026causalflow",
+      "sourceNote": "Acceptance, conference dates, title, author order, and DOI supplied by the author. The supplied DOI could not be independently resolved with the browsing tool on 2026-10-06. Ekin Uğurel's full name appears in the author's other public publication record.",
+      "timelineTitle": "Causal-Flow SCM",
+      "timelineDate": {
+        "en": "2026 · Accepted",
+        "zh": "2026 · 已录用"
+      }
+    },
+    {
+      "id": "heat",
+      "year": 2026,
+      "firstAuthor": true,
+      "domain": "transportation",
+      "status": "published",
+      "title": "Adapting travel behavior to extreme heat: Public transportation evidence from Seattle’s heatwave",
+      "authors": [
+        "Yuteng Zhang",
+        "Lyra Chen",
+        "Cynthia Chen"
+      ],
+      "venue": "Transportation Research Part D: Transport and Environment",
+      "shortVenue": "TRD 2026",
+      "type": "article",
+      "volume": "156",
+      "article": "105363",
+      "note": {
+        "en": "Published · Also presented at TRB 2026",
+        "zh": "正式发表 · 亦在 TRB 2026 报告"
+      },
+      "summary": {
+        "en": "Examining how Seattle transit riders change their travel behavior during extreme heat.",
+        "zh": "研究西雅图公共交通乘客在极端高温期间的出行行为变化。"
+      },
+      "doi": "10.1016/j.trd.2026.105363",
+      "url": "https://doi.org/10.1016/j.trd.2026.105363",
+      "preprint": "https://doi.org/10.2139/ssrn.5577058",
+      "code": "",
+      "pdf": "",
+      "citationKey": "zhang2026heatwave",
+      "sourceNote": "Updated from the supplied CV's under-review status using the publisher listing and TRID record https://trid.trb.org/View/2692634. Published July 2026, volume 156, article 105363. TRB presentation and SSRN DOI retained from author-supplied CV.",
+      "timelineTitle": "Travel Behavior in Extreme Heat",
+      "timelineDate": {
+        "en": "Jul 2026 · Published",
+        "zh": "2026 年 7 月 · 已发表"
+      }
+    },
+    {
+      "id": "lbs",
+      "year": 2026,
+      "firstAuthor": false,
+      "domain": "transportation",
+      "status": "published",
+      "title": "From biases to opportunities: leveraging Location-Based-Service (LBS) data for next-generation transportation planning",
+      "authors": [
+        "Cynthia Chen",
+        "Ryan Wang",
+        "Prateek Bansal",
+        "Lyra Chen",
+        "Ekin Uğurel",
+        "Yuteng Zhang",
+        "Xinhua Wu"
+      ],
+      "venue": "Transportation Research Part C: Emerging Technologies",
+      "shortVenue": "TRC 2026",
+      "type": "article",
+      "volume": "182",
+      "article": "105416",
+      "note": {
+        "en": "Published · Volume 182, article 105416",
+        "zh": "正式发表 · 第 182 卷，文章 105416"
+      },
+      "summary": {
+        "en": "Understanding biases in location-based-service data and its role in transportation planning.",
+        "zh": "理解位置服务数据中的偏差，探讨其在交通规划中的应用。"
+      },
+      "doi": "10.1016/j.trc.2025.105416",
+      "url": "https://doi.org/10.1016/j.trc.2025.105416",
+      "code": "",
+      "pdf": "",
+      "citationKey": "chen2026lbs",
+      "sourceNote": "Publisher metadata verified at https://www.sciencedirect.com/science/article/pii/S0968090X25004206 and https://trid.trb.org/View/2622401. Uses 2026 journal issue year (182), not the 2025 online/DOI year. Ryan Wang matches publisher metadata.",
+      "timelineTitle": "From Biases to Opportunities",
+      "timelineDate": {
+        "en": "Jan 2026 · Published",
+        "zh": "2026 年 1 月 · 已发表"
+      }
+    },
+    {
+      "id": "gan",
+      "year": 2024,
+      "firstAuthor": false,
+      "domain": "other",
+      "status": "published",
+      "title": "GANSamples-ac4C: Enhancing ac4C site prediction via generative adversarial networks and transfer learning",
+      "authors": [
+        "Fei Li",
+        "Jiale Zhang",
+        "Kewei Li",
+        "Yu Peng",
+        "Haotian Zhang",
+        "Yiping Xu",
+        "Yue Yu",
+        "Yuteng Zhang",
+        "Zewen Liu",
+        "Ying Wang",
+        "Lan Huang",
+        "Fengfeng Zhou"
+      ],
+      "venue": "Analytical Biochemistry",
+      "shortVenue": "Anal. Biochem. 2024",
+      "type": "article",
+      "volume": "689",
+      "article": "115495",
+      "note": {
+        "en": "Published · Earlier work in machine learning",
+        "zh": "正式发表 · 早期机器学习研究"
+      },
+      "summary": {
+        "en": "Generative adversarial learning and transfer learning for ac4C site prediction.",
+        "zh": "利用生成对抗学习与迁移学习进行 ac4C 位点预测。"
+      },
+      "doi": "10.1016/j.ab.2024.115495",
+      "url": "https://doi.org/10.1016/j.ab.2024.115495",
+      "code": "",
+      "pdf": "",
+      "citationKey": "li2024gansamples",
+      "sourceNote": "Publication details and full author names verified against https://pubmed.ncbi.nlm.nih.gov/38431142/. No unverified paper-specific code link is displayed.",
+      "timelineTitle": "GANSamples-ac4C",
+      "timelineDate": {
+        "en": "Feb 2024 · Online",
+        "zh": "2024 年 2 月 · 在线发表"
+      }
+    }
+  ],
+  "education": [
+    {
+      "institution": {
+        "en": "HKUST (Guangzhou)",
+        "zh": "香港科技大学（广州）"
+      },
+      "fullInstitution": "The Hong Kong University of Science and Technology (Guangzhou)",
+      "degree": {
+        "en": "Ph.D. in Intelligent Transportation",
+        "zh": "智能交通 · 博士"
+      },
+      "dates": {
+        "en": "Sep. 2026 — Present",
+        "zh": "2026.09 — 至今"
+      },
+      "detail": {
+        "en": "Systems Hub · Advisor: Prof. Jiawei Wang",
+        "zh": "系统枢纽 · 导师：王家伟教授"
+      },
+      "extra": {
+        "en": "Expected June 2029",
+        "zh": "预计 2029 年 6 月毕业"
+      },
+      "location": {
+        "en": "Guangzhou, China",
+        "zh": "中国 · 广州"
+      },
+      "current": true,
+      "start": "2026-09-01",
+      "expectedEnd": "2029-06-01"
+    },
+    {
+      "institution": {
+        "en": "University of Washington",
+        "zh": "华盛顿大学"
+      },
+      "fullInstitution": "University of Washington",
+      "degree": {
+        "en": "M.S. in Industrial and Systems Engineering",
+        "zh": "工业与系统工程 · 硕士"
+      },
+      "dates": {
+        "en": "Sep. 2024 — Jun. 2026",
+        "zh": "2024.09 — 2026.06"
+      },
+      "detail": {
+        "en": "GPA: 3.88 / 4.00",
+        "zh": "GPA：3.88 / 4.00"
+      },
+      "extra": {
+        "en": "",
+        "zh": ""
+      },
+      "location": {
+        "en": "Seattle, WA, USA",
+        "zh": "美国 · 西雅图"
+      },
+      "current": false
+    },
+    {
+      "institution": {
+        "en": "Jilin University",
+        "zh": "吉林大学"
+      },
+      "fullInstitution": "Jilin University",
+      "degree": {
+        "en": "B.E. in Software Engineering",
+        "zh": "软件工程 · 学士"
+      },
+      "dates": {
+        "en": "Sep. 2020 — Jun. 2024",
+        "zh": "2020.09 — 2024.06"
+      },
+      "detail": {
+        "en": "GPA: 3.67 / 4.00",
+        "zh": "GPA：3.67 / 4.00"
+      },
+      "extra": {
+        "en": "",
+        "zh": ""
+      },
+      "location": {
+        "en": "Changchun, China",
+        "zh": "中国 · 长春"
+      },
+      "current": false
+    }
+  ],
+  "experience": [
+    {
+      "role": {
+        "en": "Doctoral Research",
+        "zh": "博士研究"
+      },
+      "organization": {
+        "en": "HKUST (Guangzhou)",
+        "zh": "香港科技大学（广州）"
+      },
+      "dates": {
+        "en": "Sep. 2026 — Present",
+        "zh": "2026.09 — 至今"
+      },
+      "detail": {
+        "en": "Intelligent Transportation · Advisor: Prof. Jiawei Wang",
+        "zh": "智能交通 · 导师：王家伟教授"
+      },
+      "description": {
+        "en": "Transportation systems, urban mobility, transportation operations, and data-driven system modeling.",
+        "zh": "研究交通系统、城市移动行为、交通运营与数据驱动系统建模。"
+      },
+      "location": "Guangzhou, China"
+    },
+    {
+      "role": {
+        "en": "Research Assistant",
+        "zh": "研究助理"
+      },
+      "organization": {
+        "en": "THINKLab · University of Washington",
+        "zh": "THINKLab · 华盛顿大学"
+      },
+      "dates": {
+        "en": "Mar. 2025 — Aug. 2026",
+        "zh": "2025.03 — 2026.08"
+      },
+      "detail": {
+        "en": "Advisor: Prof. Cynthia Chen · Civil and Environmental Engineering",
+        "zh": "导师：Cynthia Chen 教授 · 土木与环境工程系"
+      },
+      "description": {
+        "en": "Analyzed large-scale transit, mobility, weather, and land-use data for extreme-weather travel behavior, urban resilience, and transportation reliability. Developed reproducible data-processing, statistical, spatial, and network-analysis workflows.",
+        "zh": "利用大规模公共交通、移动、天气与土地利用数据研究极端天气下的出行行为、城市韧性和交通可靠性，并开发可复现的数据处理、统计、空间及网络分析流程。"
+      },
+      "location": "Seattle, WA, USA"
+    },
+    {
+      "role": {
+        "en": "Teaching Assistant",
+        "zh": "助教"
+      },
+      "organization": {
+        "en": "University of Washington",
+        "zh": "华盛顿大学"
+      },
+      "dates": {
+        "en": "Sep. 2025 — Dec. 2025",
+        "zh": "2025.09 — 2025.12"
+      },
+      "detail": {
+        "en": "CET 512: Transportation Data Collection",
+        "zh": "CET 512：交通数据采集"
+      },
+      "description": {
+        "en": "Graded assignments, provided feedback on transportation data analysis, and held office sessions for students.",
+        "zh": "批改作业、提供交通数据分析反馈，并开展学生答疑。"
+      },
+      "location": "Seattle, WA, USA"
+    },
+    {
+      "role": {
+        "en": "Research Assistant",
+        "zh": "研究助理"
+      },
+      "organization": {
+        "en": "International Institute of Green Finance",
+        "zh": "国际绿色金融研究院"
+      },
+      "dates": {
+        "en": "Jan. 2024 — Jun. 2024",
+        "zh": "2024.01 — 2024.06"
+      },
+      "detail": {
+        "en": "Environmental and sustainability research",
+        "zh": "环境与可持续性研究"
+      },
+      "description": {
+        "en": "Examined environmental-protection case studies, organized ESG-related information, and prepared quantitative summaries.",
+        "zh": "分析环境保护案例、整理 ESG 相关信息，并完成定量总结。"
+      },
+      "location": "Beijing, China"
+    }
+  ],
+  "avatar": {
+    "src": "assets/portrait/avatar.jpg",
+    "alt": {
+      "en": "Yuteng Zhang — selected cartoon avatar",
+      "zh": "Yuteng Zhang 选用的卡通头像"
+    }
+  }
+}

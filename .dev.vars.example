@@ -1,0 +1,3 @@
+# Local Worker development only. Copy to .dev.vars; use your own random value.
+# Production: npx wrangler@4 secret put VISITOR_SECRET
+VISITOR_SECRET="REPLACE_WITH_AT_LEAST_32_RANDOM_CHARACTERS"

@@ -1,0 +1,24 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "yuteng-homepage",
+  "main": "backend/worker.js",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS",
+    "run_worker_first": ["/api/*"]
+  },
+  "vars": {
+    "ALLOWED_ORIGINS": ""
+  },
+  "d1_databases": [
+    {
+      "binding": "VISITOR_DB",
+      "database_name": "yuteng-visitors",
+      "database_id": "REPLACE_WITH_YOUR_D1_DATABASE_ID",
+      "migrations_dir": "backend/migrations"
+    }
+  ],
+  "triggers": {"crons": ["15 0 * * *"]},
+  "observability": {"enabled": false}
+}

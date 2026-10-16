@@ -1,0 +1,81 @@
+/* v6.0 — detached editorial news dock, YZ signature, academic profiles, night sky.
+   Deliberately does not change canvas controls, scene geometry or renderer. */
+:root{--news-surface:rgba(19,18,16,.96);--news-gradient:rgba(205,164,97,.065)}
+html[data-theme='light']{--news-surface:rgba(255,250,241,.97);--news-gradient:rgba(154,108,44,.035)}
+body{isolation:isolate}
+/* Sole 'YZ' master is public/assets/brand-yz.svg; the same path is used in favicon. */
+.site-header{z-index:40}
+.header-inner{min-height:73px}
+.brand{gap:11px}
+.brand-mark{width:45px;height:45px;flex:0 0 45px;color:var(--accent)}
+.brand-mark svg{width:41px;height:41px;filter:drop-shadow(0 0 11px rgba(215,172,100,.075));transition:transform .4s ease,filter .4s ease}
+.brand:hover .brand-mark svg{transform:translateY(-2px);filter:drop-shadow(0 0 13px rgba(215,172,100,.25))}
+.brand-type{font-size:11px;letter-spacing:.13em;font-weight:630}
+.brand-type>span{font-size:8px;letter-spacing:.105em}
+/* Space belongs to the CITY. No news panel shares its grid row or canvas. */
+.hero.container{max-width:none;width:min(1320px,calc(100% - 96px));display:grid;grid-template-columns:minmax(348px,.92fr) minmax(420px,1.18fr);column-gap:52px;align-items:center;padding-top:42px;min-height:560px}
+.hero-copy{z-index:2;align-self:center;padding:24px 0}
+.hero .hero-name{font-size:clamp(32px,2.9vw,40px);white-space:nowrap}
+.hero-identity{margin:24px 0 26px;gap:18px}
+.hero-line{font-size:clamp(22px,2.1vw,28px)!important;line-height:1.35!important}
+.hero-description{font-size:14px;line-height:1.82;max-width:465px}
+.hero-actions{margin-top:25px}
+.hero-meta{margin-top:23px}
+.hero-visual.city-experience{min-width:0;margin:0;align-self:center}
+.city-stage{height:560px}
+/* Three intentional scholarly destinations: visually separated from the CTA. */
+.hero-social{display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-top:27px;padding-top:19px;border-top:1px solid var(--line-soft)}
+.hero-social-link{display:inline-flex;align-items:center;gap:7px;padding:6px 9px 6px 6px;min-height:37px;white-space:nowrap;color:var(--secondary);font-size:11px;letter-spacing:.005em;border:1px solid transparent;border-radius:8px;transition:background .24s,border-color .24s,color .24s,transform .24s}
+.hero-social-link:hover,.hero-social-link:focus-visible{color:var(--text);border-color:var(--line);background:var(--glow);transform:translateY(-2px)}
+.hero-social-icon{width:26px;height:26px;border:1px solid var(--line);border-radius:7px;display:grid;place-items:center;color:var(--accent);background:rgba(206,169,98,.05)}
+.hero-social-icon svg{width:15px;height:15px}
+.hero-social-out{font-size:11px;color:var(--accent);margin-left:3px;opacity:.68}
+/* Floating = lifted material, not fixed to viewport and never on top of the city. */
+.news-dock.container{max-width:none;width:min(1130px,calc(100% - 96px));position:relative;z-index:3;margin:21px auto 24px;scroll-margin-top:95px}
+.news-panel{display:grid;grid-template-columns:280px minmax(0,1fr);gap:28px;padding:28px 34px 28px 30px;position:relative;background:linear-gradient(137deg,var(--news-gradient),transparent 60%),var(--news-surface);border:1px solid rgba(204,160,93,.24);border-radius:15px;box-shadow:0 22px 62px rgba(0,0,0,.27),0 1px 0 rgba(237,195,132,.06) inset;backdrop-filter:blur(12px);isolation:isolate}
+html[data-theme='light'] .news-panel{box-shadow:0 18px 60px rgba(87,67,31,.075),0 1px 0 rgba(255,255,255,.6) inset}
+.news-panel:before{content:'';position:absolute;top:0;left:45px;width:150px;height:1px;background:linear-gradient(90deg,transparent,var(--accent),transparent);opacity:.58;pointer-events:none}
+.news-intro{align-self:center;min-width:0;padding:4px 20px 4px 0}
+.news-intro .eyebrow{font-size:9px!important;color:var(--accent);display:flex;align-items:center;gap:10px;letter-spacing:.12em}
+.news-live-dot{display:inline-block;width:5px;height:5px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px var(--glow),0 0 8px var(--accent)}
+.news-intro h2{font-size:clamp(23px,2.2vw,30px);font-weight:500;letter-spacing:-.045em;line-height:1.2;margin:16px 0 11px}
+.news-kicker{font-size:12px;color:var(--secondary);line-height:1.7;max-width:215px}
+.news-see-all{display:inline-flex;align-items:center;gap:17px;font-size:11px;color:var(--accent);margin-top:22px;border-bottom:1px solid rgba(204,160,93,.35);padding-bottom:6px}
+.news-see-all:hover{color:var(--text)}
+.news-list-wrap{border-left:1px solid var(--line);min-width:0;padding-left:29px}
+.news-list-head{display:flex;justify-content:space-between;gap:20px;font:9px/1.4 var(--mono);letter-spacing:.12em;color:var(--muted);padding:0 0 9px}
+.news-list{margin:0;padding:0;list-style:none}
+.news-item{display:grid;grid-template-columns:132px minmax(0,1fr) 138px;align-items:center;gap:15px;padding:9px 0;border-top:1px solid var(--line-soft);min-width:0}
+.news-date{font-size:10px;color:var(--accent);white-space:nowrap;letter-spacing:0}
+.news-paper-title{color:var(--text);font-size:12px;font-weight:500;min-width:0;display:flex;align-items:center;justify-content:space-between;gap:9px;line-height:1.5}
+.news-paper-title:hover,.news-paper-title:focus-visible{color:var(--accent)}
+.news-arrow{color:var(--accent);opacity:.52;font-size:13px;transition:transform .23s,opacity .23s}
+.news-paper-title:hover .news-arrow{transform:translate(2px,-2px);opacity:1}
+.news-venue{font:10px/1.5 var(--font);color:var(--muted);text-align:right}
+/* Single-purpose stars: tiny, behind every block, light mode entirely clean. */
+.site-night-sky{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden;contain:strict}
+.site-night-sky .star{position:absolute;top:var(--sy);left:var(--sx);width:var(--ss);height:var(--ss);border-radius:50%;background:var(--star-color,rgba(245,225,185,.7));opacity:var(--base-opacity,.16);filter:drop-shadow(0 0 2px rgba(241,204,141,.18));animation:night-twinkle var(--sp,15s) ease-in-out var(--sd,0s) infinite alternate;will-change:opacity}
+@keyframes night-twinkle{0%,100%{opacity:.03}55%{opacity:var(--base-opacity)}75%{opacity:.06}}
+html[data-theme='light'] .site-night-sky{display:none}
+html[data-motion='paused'] .site-night-sky .star,html[data-motion='reduced'] .site-night-sky .star,html[data-motion='hidden'] .site-night-sky .star{animation-play-state:paused}
+html[data-theme='dark'] .site-night-sky{opacity:.7}
+/* Page content stays above fixed ambient layer without intercepting scene pointer events. */
+main{position:relative;z-index:1}
+.site-footer{position:relative;z-index:1}
+@media (min-width:1450px){.hero.container{min-height:620px}.city-stage{height:585px}}
+@media (max-width:1190px){.hero.container{width:calc(100% - 72px);grid-template-columns:minmax(305px,.92fr) minmax(350px,1.1fr);column-gap:20px;min-height:480px}.city-stage{height:480px}.hero .hero-name{font-size:34px}.news-dock.container{width:calc(100% - 72px)}.news-panel{grid-template-columns:225px minmax(0,1fr);gap:12px;padding:23px 22px}.news-list-wrap{padding-left:20px}.news-item{grid-template-columns:108px minmax(0,1fr) 115px;gap:10px}}
+@media (max-width:960px){.hero.container{grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:9px;min-height:auto}.city-stage{height:420px}.hero-copy{padding-top:20px}.hero .hero-name{font-size:29px}.hero-social{gap:2px}.hero-social-link{font-size:10px;gap:4px}.hero-social-icon{width:24px;height:24px}.hero-social-out{display:none}.news-panel{grid-template-columns:1fr;gap:20px}.news-intro{padding:0;display:grid;grid-template-columns:1fr auto;align-items:start}.news-intro .eyebrow,.news-intro h2,.news-intro .news-kicker{grid-column:1}.news-intro h2{margin:9px 0 6px}.news-see-all{grid-column:2;grid-row:2/4;align-self:center;margin:0}.news-list-wrap{border-left:0;padding:0}.news-item{grid-template-columns:125px minmax(0,1fr) 130px;gap:15px}}
+@media (max-width:740px){.header-inner{min-height:67px}.brand-mark{width:37px;height:37px;flex-basis:37px}.brand-mark svg{width:34px;height:34px}.hero.container{width:calc(100% - 40px);grid-template-columns:1fr;padding-top:27px;gap:0}.hero-copy{padding:12px 0 0}.hero .hero-name{font-size:clamp(30px,7.5vw,36px)}.hero .hero-line{font-size:23px!important}.hero-social{margin-top:22px;padding-top:15px;gap:4px}.hero-social-link{font-size:11px}.hero-social-out{display:inline}.hero-visual.city-experience{margin:13px 0 0}.city-stage{height:min(92vw,390px)}.news-dock.container{width:calc(100% - 40px);margin:9px auto 18px}.news-panel{padding:21px 17px 18px;border-radius:12px;gap:15px}.news-intro{display:block}.news-intro h2{font-size:25px;margin:8px 0 5px}.news-kicker{max-width:none}.news-see-all{margin-top:11px}.news-list-head{margin-top:2px}.news-item{grid-template-columns:100px minmax(0,1fr);gap:3px 10px;padding:10px 0}.news-paper-title{font-size:12px;line-height:1.4}.news-venue{grid-column:2;text-align:left;font-size:10px}.news-date{font-size:9px;align-self:start;padding-top:2px}}
+@media(max-width:390px){.hero-social-link{padding:6px 5px}.hero-social{gap:0}.hero-identity{gap:12px}.hero .hero-name{font-size:29px}.news-date{font-size:8.5px}.news-item{grid-template-columns:94px 1fr}}
+@media(prefers-reduced-motion:reduce){.site-night-sky .star,.news-panel,.brand-mark svg{animation:none!important;transition:none!important}}
+@media print{.site-night-sky{display:none!important}.news-panel{box-shadow:none;break-inside:avoid}.news-item{padding:5px 0}.hero-social-link{padding:0}}
+
+/* Refined narrow layout: chronology and venue share the first line;
+   titles get a full readable line rather than colliding with long dates. */
+@media(max-width:740px){
+  .news-item{grid-template-columns:minmax(0,1fr) auto;gap:4px 8px;padding:11px 0}
+  .news-date{grid-column:1;grid-row:1;font-size:9px;white-space:normal;line-height:1.5}
+  .news-venue{grid-column:2;grid-row:1;font-size:10px;text-align:right;line-height:1.5}
+  .news-paper-title{grid-column:1/-1;grid-row:2;font-size:12.5px}
+}
+@media(max-width:390px){.news-item{grid-template-columns:minmax(0,1fr) auto}}

@@ -1,0 +1,172 @@
+{
+  "version": 4,
+  "seed": 21119,
+  "camera": {
+    "fov": 42,
+    "distance": 33.5,
+    "pitch": 0.57,
+    "yaw": -0.64,
+    "minZoom": 1,
+    "maxZoom": 1,
+    "target": [
+      0,
+      0.5,
+      0
+    ]
+  },
+  "performance": {
+    "maxDpr": 1.75,
+    "maxFps": 36,
+    "mobileFps": 30,
+    "softwareFps": 18
+  },
+  "transitionSpeed": 4.8,
+  "city": {
+    "grid": 7,
+    "spacing": 2.45,
+    "trafficCount": 62,
+    "width": 19.6,
+    "depth": 18.2,
+    "buildingHeight": 5.8
+  },
+  "agents": [
+    {
+      "id": "perception",
+      "label": {
+        "en": "PERCEPTION",
+        "zh": "感知"
+      },
+      "position": [
+        -6,
+        1.8,
+        3.5
+      ],
+      "color": "cyan"
+    },
+    {
+      "id": "memory",
+      "label": {
+        "en": "MEMORY",
+        "zh": "记忆"
+      },
+      "position": [
+        -3.5,
+        5,
+        -3.7
+      ],
+      "color": "purple"
+    },
+    {
+      "id": "planning",
+      "label": {
+        "en": "PLANNING",
+        "zh": "规划"
+      },
+      "position": [
+        5.7,
+        3.8,
+        -2.8
+      ],
+      "color": "cyan"
+    },
+    {
+      "id": "tools",
+      "label": {
+        "en": "TOOLS",
+        "zh": "工具"
+      },
+      "position": [
+        5,
+        1.3,
+        5
+      ],
+      "color": "green"
+    },
+    {
+      "id": "mobility",
+      "label": {
+        "en": "MOBILITY",
+        "zh": "移动行为"
+      },
+      "position": [
+        -0.2,
+        1.4,
+        6.4
+      ],
+      "color": "cyan"
+    },
+    {
+      "id": "critic",
+      "label": {
+        "en": "CRITIC",
+        "zh": "评估"
+      },
+      "position": [
+        -5.4,
+        1.2,
+        -5.6
+      ],
+      "color": "purple"
+    }
+  ],
+  "core": {
+    "position": [
+      0,
+      3,
+      0
+    ],
+    "label": {
+      "en": "LLM CORE",
+      "zh": "LLM 核心"
+    }
+  },
+  "palette": {
+    "building": [
+      "#282722",
+      "#c7c4b6"
+    ],
+    "buildingAlt": [
+      "#39352b",
+      "#e0d8c4"
+    ],
+    "platform": [
+      "#111310",
+      "#eee9db"
+    ],
+    "cyan": [
+      "#d9b56e",
+      "#906922"
+    ],
+    "purple": [
+      "#f0d9a2",
+      "#84643a"
+    ],
+    "green": [
+      "#b89651",
+      "#887342"
+    ],
+    "grid": [
+      "#6b5b3d",
+      "#baa680"
+    ],
+    "muted": [
+      "#897044",
+      "#b5a482"
+    ],
+    "white": [
+      "#fff0c6",
+      "#614718"
+    ],
+    "water": [
+      "#161f22",
+      "#c6d6d3"
+    ]
+  },
+  "motion": {
+    "autoRotateSpeed": 0.025,
+    "floatAmplitude": 0.1,
+    "floatSpeed": 0.65,
+    "idleResumeDelay": 4.0,
+    "ambientParticles": 30
+  }
+}

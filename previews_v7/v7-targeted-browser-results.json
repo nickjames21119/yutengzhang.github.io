@@ -1,0 +1,27 @@
+{
+  "city_renderer": "canvas3d",
+  "city_resources": 20,
+  "logo_node_count": 4,
+  "stars_visible_count": 26,
+  "star_opacity_before": "0.532636",
+  "star_animation": "v7-star-twinkle",
+  "border_zero": true,
+  "canvas_border_zero": true,
+  "star_opacity_after": "0.174976",
+  "pulse_on_click": 1,
+  "pulse_cleaned": true,
+  "no_pulse_on_drag": true,
+  "city_quaternion_after_drag": [
+    0.3268515382973257,
+    -0.07361454829332695,
+    -0.1766042562206503,
+    0.9255052170987434
+  ],
+  "agent_reveal": 1,
+  "light_stars_hidden": true,
+  "light_theme": "light",
+  "desktop_no_overflow": true,
+  "mobile_renderer": "canvas3d",
+  "mobile_no_overflow": true,
+  "browser_exceptions": []
+}
