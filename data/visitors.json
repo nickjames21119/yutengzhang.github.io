@@ -1,6 +1,6 @@
 {
   "enabled": true,
-  "apiBase": "./api",
+  "apiBase": "https://yuteng-homepage.yutengzhang-research.workers.dev/api",
   "refreshSeconds": 120,
   "requestTimeoutMs": 6500
 }
